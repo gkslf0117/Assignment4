@@ -1,0 +1,15 @@
+general:
+  device: cpu
+model:
+  onnx_path: mnist_small.onnx
+data:
+  dataset: MNIST
+  start: 0
+  end: 5
+specification:
+  norm: .inf
+  epsilon: 0.01
+solver:
+  batch_size: 256
+bab:
+  timeout: 60
